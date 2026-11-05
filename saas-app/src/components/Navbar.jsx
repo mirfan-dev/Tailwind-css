@@ -79,11 +79,8 @@ const Navbar = () => {
           </ul>
         </div>
       </nav>
-      <Home/>
-      <Feature/>
-      <Pricing/>
-      <Contact/>
-      <Footer/>
+      
+      
     </>
   );
 };
