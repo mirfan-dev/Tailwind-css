@@ -5,6 +5,7 @@ export const USER_PAGE_SIZE= 5;
 export const PRODUCT_PAGE_SIZE= 5;
 export const ORDER_PAGE_SIZE= 5;
 export const ADMIN_ORDER_PAGE_SIZE = 10;
+export const ATTENDANCE_PAGE_SIZE = 5;
 
 export const getProductImageUrl = (productId) => { 
     return `${BASE_URL}/products/image/${productId}`;
