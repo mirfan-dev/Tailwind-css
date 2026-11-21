@@ -146,6 +146,8 @@ const SignUp = () => {
           <textarea
             rows={5}
             placeholder="Enter Your Message"
+            onChange={(e) => handleChange(e, "about")}
+            value={data.about}
             className="w-full border border-blue-800 rounded-md px-4 py-2"
           ></textarea>
         </div>

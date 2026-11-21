@@ -18,6 +18,8 @@ import Home from "./pages/users/Home";
 import AdminDashboard from "./pages/admin/AdminDashboard";
 import AdminHome from "./pages/admin/AdminHome";
 import CustomNavbar from "./components/CustomNavBar";
+import AttendancePage from "./pages/users/AttendancePage";
+import AttendanceDashboard from "./pages/admin/AttendanceDashboard";
 
 function App() {
   return (
@@ -45,14 +47,17 @@ function App() {
           <Route path="/users" element={<Dashboard />}>
             <Route path="home" element={<Home />} />
             <Route path="profile/:userId" element={<Profile />} />
+             <Route path="attendance" element={<AttendancePage />} />
           </Route>
 
           {/* Admin Routes */}
           <Route path="/admins" element={<AdminDashboard />}>
             <Route path="home" element={<AdminHome />} />
-            <Route
-              path="userProfile"
+            <Route path="userProfile"
               element={<ViewUserProfile />}
+            />
+            <Route path="attendanceDashboard"
+              element={<AttendanceDashboard />}
             />
           </Route>
 

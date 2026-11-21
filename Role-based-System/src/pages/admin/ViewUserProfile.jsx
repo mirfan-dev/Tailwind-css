@@ -97,18 +97,6 @@ const ViewUserProfile = () => {
     }
   };
 
-  // Reset search and load all users
-  const resetSearch = () => {
-    setSearchQuery("");
-    getUser(0, USER_PAGE_SIZE, "createdAt", "desc");
-  };
-
-  // Pagination
-  const handlePageChange = (pageNumber) => {
-    if (pageNumber < 0 || pageNumber >= user.totalPages) return;
-
-    getUser(pageNumber, USER_PAGE_SIZE, "createdAt", "desc");
-  };
 
 
 const userView = () => {
@@ -180,7 +168,7 @@ const userView = () => {
       </div>
 
       {/* Pagination */}
-      <div className="mt-5 flex flex-wrap justify-end gap-1">
+      <div className="mt-5 mb-3 flex flex-wrap justify-end gap-1 pr-6">
 
         <button
           onClick={() => getUser(0, USER_PAGE_SIZE, "createdAt", "desc")}
